@@ -1,0 +1,390 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #232323;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+/* Cabeçalho */
+header{
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 100px;
+
+    background-color: #232323;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #f6f6f6;
+    z-index: 1;
+    
+}
+
+header h1{
+    display: none;
+}
+
+header nav .navegacao__lista{
+    display: flex;
+    column-gap: 1rem;
+    list-style-type: none;
+}
+
+header nav .navegacao__lista li a{
+    color: #f6f6f6;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+header nav .navegacao__lista li a:hover{
+    color: #0180FF;
+    font-size: 1.25rem;
+}
+
+
+/* Home */
+.container{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5.5rem;
+}
+
+.home{
+    width: 100vw;
+    height: calc(100vh - 100px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 7rem;
+}
+
+.home__textos h2{
+    
+    font-size: 2.5rem;
+    color: #f6f6f6;
+}
+
+.home__textos span, .home__textos h3{
+    color: #0180FF;
+}
+
+.home__textos h3{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.home__textos a{
+    background-color: #0180FF;
+    border-radius: 10px;
+    color: #f6f6f6;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.home__textos a:hover{
+    background-color: #035cb4;
+    padding: 5px 20px;
+    transition: 0.5s;
+}
+
+/* Sobre mim */
+.sobre-mim{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card{
+    width: 100%;
+    max-width: 1200px;
+
+    background-color: #151515;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    column-gap: 2rem;
+    border: 1px solid #9AA0AC;
+    border-radius: 10px;
+    padding: 5rem 2rem;
+    
+}
+
+.card__foto{
+    width: 100vw;
+    height: 400px;
+    background-image: url(../img/minha-foto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card__foto h3{
+    position: relative;
+    top: 20px;
+    left: 5px;
+
+    background-color: #232323;
+    display: inline;
+    color: #f6f6f6;
+    border-radius: 10px;
+    font-size: .8rem;
+    padding: 10px;
+}
+
+.card__textos{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding-right: 4rem;
+}
+
+.card__textos h3{
+    color: #0180FF;
+}
+
+.card__textos h2{
+    color: #f6f6f6;
+}
+
+.card__textos p{
+    color: #9AA0AC;
+}
+
+.card__textos ul{
+    display: flex;
+    column-gap: 3rem;
+    list-style-type: none;
+}
+
+.card__textos img{
+    width: 30px;
+}
+
+.card__textos img:hover{
+    scale: 1.2;
+}
+
+/* Projetos */
+.projetos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 5rem;
+
+    
+}
+
+.projetos h2{
+    font-size: 2rem;
+    color: #f6f6f6;
+    text-align: center;
+}
+
+.projetos h2 span{
+    color: #0180FF;
+}
+
+.cards__projetos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem 10rem;
+}
+
+.cards__projetos .card__projeto{
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1rem;
+    
+    background-color: #151515;
+    border: 1px solid #0180FF;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.card__projeto h3{
+    color: #f6f6f6;
+}
+
+.card__projeto p{
+    color: #9AA0AC;
+}
+
+.card__projeto a{
+    color: #0180FF;
+    text-decoration: none;
+}
+
+.card__projeto a:hover{
+    color: #5BAAFF;
+    transition: .25s;
+}
+
+
+/* Habilidades */
+.habilidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 5rem;
+    padding: 13rem;
+}
+
+.habilidades h2{
+    color: #f6f6f6;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.habilidades h2 span{
+    color: #0180FF;
+}
+
+.cards__habilidades{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card__habilidade{
+    width: 160px;
+    color: #f6f6f6;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+
+    padding: 1rem;
+
+    border: 2px solid #0180FF;
+    border-radius: 10px;
+}
+
+.card__habilidade:hover{
+    transition: .5s;
+    border: 2px solid #5BAAFF;
+    scale: 1.1;
+}
+
+.card__habilidade img{
+    width: 50px;
+}
+
+/* Formação */
+.formacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
+}
+
+.formacao h2{
+    color: #f6f6f6;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.formacao h2 span{
+    color: #0180FF;
+}
+
+.card__formacao{
+    display: flex;
+    flex-direction: column;
+
+    background-color: #151515;
+    width: 60vw;
+    padding: 2rem;
+    border: 1px solid #9AA0AC;
+    border-radius: 10px;
+}
+
+.card__formacao h3{
+    color: #0180FF;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.card__formacao p{
+    font-size: 1.2rem;
+    color: #f6f6f6;
+}
+
+/* Contato */
+.contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
+}
+
+.contato h2{
+    color: #f6f6f6;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contato h2 span{
+    color: #0180FF;
+}
+
+.contatos__info{
+    display: flex;
+    column-gap: 3rem;
+}
+
+.contato__card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contato__card:hover{
+    scale: 1.1;
+}
+
+.contato__card a{
+    color: #0180FF;
+    text-decoration: none;
+}
+
+.contato__card a p{
+    color: #f6f6f6;
+}
+
+/* Rodape */
+footer{
+    background-color: #151515;
+    font-size: 1.2rem;
+    color: #f6f6f6;
+    padding: 2rem;
+}
+
+footer a{
+    color: #0180FF;
+    text-decoration: none;
+}
