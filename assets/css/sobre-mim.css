@@ -1,0 +1,105 @@
+/* Sobre mim */
+.sobre-mim{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card{
+    width: 100%;
+    max-width: 1200px;
+    
+    background-color: #151515;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    column-gap: 2rem;
+    border: 1px solid #9AA0AC;
+    border-radius: 10px;
+    padding: 5rem 2rem;
+    
+}
+
+.card__foto{
+    width: 100vw;
+    height: 400px;
+    background-image: url(../img/minha-foto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card__foto h3{
+    position: relative;
+    top: 20px;
+    left: 5px;
+
+    background-color: #232323;
+    display: inline;
+    color: #f6f6f6;
+    border-radius: 10px;
+    font-size: .8rem;
+    padding: 10px;
+}
+
+.card__textos{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding-right: 4rem;
+}
+
+.card__textos h3{
+    color: #0180FF;
+}
+
+.card__textos h2{
+    color: #f6f6f6;
+}
+
+.card__textos p{
+    color: #9AA0AC;
+}
+
+.card__textos ul{
+    display: flex;
+    column-gap: 3rem;
+    list-style-type: none;
+}
+
+.card__textos img{
+    width: 30px;
+}
+
+.card__textos img:hover{
+    scale: 1.2;
+}
+
+@media screen and (max-width: 768px){
+
+    .card{
+        width: 90%;
+    
+        background-color: #151515;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        align-items: center;  
+
+        border: 1px solid #9AA0AC;
+        border-radius: 10px;
+        padding: 5rem 2rem;
+    }
+
+    .card__foto{
+        width: 80vw;
+        height: 400px;
+    
+    }
+
+    .card__textos{
+        padding: 0;
+    }
+
+}

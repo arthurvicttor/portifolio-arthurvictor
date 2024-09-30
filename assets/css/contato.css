@@ -1,0 +1,49 @@
+/* Contato */
+.contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
+}
+
+.contato h2{
+    color: #f6f6f6;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contato h2 span{
+    color: #0180FF;
+}
+
+.contatos__info{
+    display: flex;
+    column-gap: 3rem;
+}
+
+.contato__card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contato__card:hover{
+    scale: 1.1;
+}
+
+.contato__card a{
+    color: #0180FF;
+    text-decoration: none;
+}
+
+.contato__card a p{
+    color: #f6f6f6;
+}
+
+@media screen and (max-width: 768px) {
+    .contatos__info{
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+}

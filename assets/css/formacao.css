@@ -1,0 +1,53 @@
+/* Formação */
+.formacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
+}
+
+.formacao h2{
+    color: #f6f6f6;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.formacao h2 span{
+    color: #0180FF;
+}
+
+.card__formacao{
+    display: flex;
+    flex-direction: column;
+
+    background-color: #151515;
+    width: 60vw;
+    padding: 2rem;
+    border: 1px solid #9AA0AC;
+    border-radius: 10px;
+}
+
+.card__formacao h3{
+    color: #0180FF;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.card__formacao p{
+    font-size: 1.2rem;
+    color: #f6f6f6;
+}
+
+@media screen and (max-width: 768px) {
+    .card__formacao{
+        text-align: center;
+        align-items: center;
+    }
+
+    .card__formacao h3{
+        color: #0180FF;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}

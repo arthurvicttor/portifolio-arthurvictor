@@ -1,0 +1,98 @@
+/* Cabeçalho */
+header{
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 100px;
+
+    background-color: #232323;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #f6f6f6;
+    z-index: 1;
+    
+}
+
+header h1{
+    display: none;
+}
+
+header nav .navegacao__lista{
+    display: flex;
+    column-gap: 1rem;
+    list-style-type: none;
+}
+
+header nav .navegacao__lista li a{
+    color: #f6f6f6;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+header nav .navegacao__lista li a:hover{
+    color: #0180FF;
+    font-size: 1.25rem;
+}
+
+header nav .mobile__menu{
+    display: none;
+}
+
+header nav .mobile__menu-icon{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+
+
+    header nav .navegacao__lista{
+        display: none;
+    }
+
+    header .mobile__menu {
+        position: absolute;
+        top: 88px;
+        right: 0;
+        left: 0;    
+        
+        background-color: #F6F6F6;
+        
+        display: none;
+        flex-direction: column;
+        row-gap: .5rem;
+    }
+    
+    header .mobile__menu a{
+        display: block;
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: rgb(59, 59, 59);
+        padding: 1.1rem;
+    }
+    
+    header .mobile__menu li:nth-child(1) a{
+        color: #F6F6F6;
+        background-color: #0180FF;
+    }
+    header .mobile__menu a:hover{
+        color: #F6F6F6;
+        background-color: #0180FF;
+    }
+    
+    header .mobile__menu-icon{
+        padding: .5rem;
+        background-color: #0180FF
+    }
+
+    header nav .mobile__menu-icon{
+        display: block;
+    }
+    
+    header .mobile__menu-icon button{
+        color: #F6F6F6;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+}
